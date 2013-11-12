@@ -29,7 +29,7 @@ module.exports = function(grunt) {
                     author: "Author",
                     theme: "default",
                     syntax: "zenburn",
-                    controls: [A,
+                    controls: true,
                     progress: true,
                     history: true,
                     center: true,

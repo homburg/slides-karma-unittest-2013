@@ -71,6 +71,7 @@ module.exports = function(grunt) {
                 options: {
                     build_branch: "gh-pages",
                     dist: "build",
+                    exclude: ["node_modules"]
                 }
             }
         }

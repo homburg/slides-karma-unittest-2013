@@ -1,14 +1,56 @@
 section
-    h1 Slideshow
+    h1 Karma runner
     img(src="assets/logo.gif", alt="logo")
+    h2 JS Unittest featuring AngularJS
 
 section
-    h2 Title
-    pre.fragment
-        code(data-trim, contenteditable).
-            $.when(that(), other())
-                .done(okay)
-                .fail(notOkay);
+    h2 What?
+
+    q(cite="https://github.com/karma-runner/karma/").
+      A simple tool that allows you to execute JavaScript code in multiple real browsers, powered by Node.js and Socket.io.
+
+
+    //- pre.fragment
+    //-     code(data-trim, contenteditable).
+    //-         $.when(that(), other())
+    //-             .done(okay)
+    //-             .fail(notOkay);
 
 section
-    h2 The End
+  h2 What else?
+
+  p Testing framework
+
+  p Jasmine (by default)
+
+  pre.fragment
+      code(data-trim, contenteditable).
+        describe("My project", function () {
+          
+          describe("my function", function () {
+
+            it("should do something", function () {
+              // ...
+            });
+          };
+
+        });
+
+section
+  h2 AngularJS
+
+  p Dependency injection
+
+  pre.fragment
+    code(data-trim, contenteditable).
+      app.controller(function (myService) {
+        myService.call("Hey!");
+      });
+
+      app.filter(function (myService) {
+        return function (input) {
+          return myService.flob(input);
+        });
+      });
+
+
